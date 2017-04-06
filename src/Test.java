@@ -1,10 +1,9 @@
 
-public class Test extends Operator implements Using{
-	@Override
-	public int cong(int a, int b) {
-		return super.cong(a, b);
-	}
-	public static void main(String args[]){
-		System.out.println("Cong: "+new Test().nhan(4,5));
+import myabstract.DateTimeUtils;
+
+public class Test extends DateTimeUtils{
+	public static void main(String[]args){
+		System.out.println("Time: "+new Test().getTime("2016-11-16 06:43:19"));
+		System.out.println("Date: "+new Test().getDate("2016-11-16 06:43:19"));
 	}
 }
